@@ -18,23 +18,31 @@ $$
 
 # 25 de abril 
 
+# Sistema de tanques
 
 # 28 de abril
 
+# Fuuncion de transferencia
 
 # 2 de mayo
 
 
 # 5 de mayo
 
+# Maquina de vapor
 
 # 9 de mayo
 
+# Diagrama de flujo de señal
 
 # 12 de mayo
+
+
 
 
 # 16 de mayo
 
 
 # 19 de mayo
+
+#Sistema de segundo orden
