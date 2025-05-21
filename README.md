@@ -116,6 +116,30 @@ $$
 $$
 
 
+En consecuencia,
+
+$$
+\frac{dH}{\sqrt{H}} = -0.005\,dt
+$$
+
+Supóngase que \( H = 1.125 \, \text{m} \) en \( t = t_1 \). Integrando ambos lados de esta última ecuación, tenemos
+
+$$
+\int_{2.25}^{1.125} \frac{dH}{\sqrt{H}} = \int_{0}^{t_1} (-0.005) dt = -0.005t_1
+$$
+
+Por lo tanto, se infiere que
+
+$$
+2\sqrt{H} \bigg|_{2.25}^{1.125} = 2\sqrt{1.125} - 2\sqrt{2.25} = -0.005t_1
+$$
+
+o bien
+
+$$
+t_1 = 176 \, \text{s}
+$$
+
 
 # 28 de abril
 
