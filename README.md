@@ -403,6 +403,53 @@ $$
 \lim_{s \to 0} sY(s) = \lim_{s \to 0} s \cdot \frac{\frac{4}{s}}{5s + 1} = \lim_{s \to 0} \frac{4}{5s + 1} = 4
 $$
 
+# Ejemplo 1
+
+Dada la función de transferencia:
+
+$$
+G(s) = \frac{5s + 10}{s^2 + 4s + 5}
+$$
+
+Calcular el valor final de la salida \( y(t) \), si la entrada es un escalón unitario.
+
+Sabemos que:
+
+$$
+\lim_{t \to \infty} y(t) = \lim_{s \to 0} s \cdot G(s) \cdot \frac{1}{s} = \lim_{s \to 0} \frac{5s + 10}{s^2 + 4s + 5}
+$$
+
+Sustituímos \( s = 0 \):
+
+$$
+= \frac{5(0) + 10}{0 + 0 + 5} = \frac{10}{5} = 2
+$$
+
+
+# Ejemplo 2 
+
+Dada la función de transferencia:
+
+$$
+G(s) = \frac{10}{s(s + 2)}
+$$
+
+Calcular el valor final de la salida \( y(t) \), si la entrada es un escalón unitario.
+
+Aplicando el teorema del valor final:
+
+$$
+\lim_{t \to \infty} y(t) = \lim_{s \to 0} s \cdot G(s) \cdot \frac{1}{s} = \lim_{s \to 0} \frac{10}{s + 2}
+$$
+
+Sustituyendo \( s = 0 \):
+
+$$
+\frac{10}{2} = 5
+$$
+
+**Resultado final:** El valor de la salida en estado estable es \( y(\infty) = 5 \).
+
 # 2 de mayo
 
 
