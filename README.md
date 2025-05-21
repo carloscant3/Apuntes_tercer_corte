@@ -348,6 +348,61 @@ $$
 \Rightarrow s+4 = 0 \Rightarrow s = -4
 $$
 
+
+# Ejemplo 2 
+
+Sea la siguiente función de transferencia:
+
+$$
+G(s) = \frac{10}{s^2 + 6s + 13}
+$$
+
+El denominador es:
+
+$$
+s^2 + 6s + 13 = 0
+$$
+
+Aplicamos fórmula cuadrática:
+
+$$
+s = \frac{-6 \pm \sqrt{6^2 - 4(1)(13)}}{2(1)} = \frac{-6 \pm \sqrt{36 - 52}}{2} = \frac{-6 \pm \sqrt{-16}}{2} = -3 \pm 2i
+$$
+
+Los polos del sistema son: 
+
+$$
+s = -3 \pm 2i
+$$
+
+# Teorema del valor final
+
+•El error en estado estacionario corresponde al error
+medido en 𝑡 = ∞
+
+Es posible aprovechar el teorema del valor final para
+saber el valor final del error
+
+$$
+G(s) = \frac{Y(s)}{U(s)} = \frac{4}{5s+1}
+$$
+
+$$
+Y(s) = \frac{4 \cdot U(s)}{5s+1}
+$$
+
+- Si la entrada es un escalón:
+
+$$
+Y(s) = \frac{\frac{4}{s}}{5s+1}
+$$
+
+El valor final de \( Y(s) \) se puede calcular aplicando el teorema del valor final:
+
+$$
+\lim_{s \to 0} sY(s) = \lim_{s \to 0} s \cdot \frac{\frac{4}{s}}{5s + 1} = \lim_{s \to 0} \frac{4}{5s + 1} = 4
+$$
+
 # 2 de mayo
 
 
