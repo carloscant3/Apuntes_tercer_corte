@@ -42,6 +42,12 @@ $$
 A_1 \frac{dh_1}{dt} = q_i - q_1
 $$
 
+Modelo de un tanque:
+
+![image](https://github.com/user-attachments/assets/47466672-464d-407a-86ff-076afe7149fb)
+
+
+
 
 
 # 28 de abril
