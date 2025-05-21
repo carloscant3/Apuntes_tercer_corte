@@ -140,6 +140,70 @@ $$
 t_1 = 176 \, \text{s}
 $$
 
+#Ejemplo 2 
+
+En el sistema de nivel de líquido mostrado en la Fig. 4-38, la razbn de flujo en estado estable a través del tanque es Q y las alturas en estado estable
+del tanque 1 y el tanque 2 son fi y 4, respectivamente. En 1 = O la razón de flujo de
+entrada se cambia de Q a Q + q, donde q es un cambio pequefio en la razón de flujo
+de entrada. Los cambios correspondientes en las alturas (hl y h2) y los cambios en la 
+
+![image](https://github.com/user-attachments/assets/6fc0ab0d-7445-4fb6-bf3f-e273d251d0bf)
+
+
+razón de flujo (q, y q2) se suponen pequefios. Las capacitancias del tanque I y el tanque 2 son Cl y C;, respectivamente. La resistencia de la válvula entre los tanques es
+Rl y la correspondiente a la válvula de salida es R2.
+Suponiendo que q es la entrada y q2 es la salida, obténgase el modelo maternatico (ecuación diferencial) del sistema. 
+
+Solution. Para el tanque 1, tenemos
+
+$$
+C_1 \, dh_1 = (q - q_1) \, dt
+$$
+
+donde
+
+$$
+q_1 = \frac{h_1 - h_2}{R_1}
+$$
+
+Así pues
+
+$$
+C_1 \, \frac{dh_1}{dt} + \frac{h_1}{R_1} = q + \frac{h_2}{R_1} \quad (4-30)
+$$
+
+Para el tanque 2, tomamos
+
+$$
+C_2 \, dh_2 = (q_1 - q_2) \, dt
+$$
+
+donde
+
+$$
+q_2 = \frac{h_2}{R_2}
+$$
+
+Por lo tanto,
+
+$$
+C_2 \, \frac{dh_2}{dt} + \frac{h_2}{R_1} + \frac{h_2}{R_2} = \frac{h_1}{R_1} \quad (4-31)
+$$
+
+Al eliminar \( h_1 \) de las Ecs. (4-30) y (4-31), el resultado es
+
+$$
+R_1C_1R_2C_2 \frac{d^2h_2}{dt^2} + (R_1C_1 + R_2C_2 + R_2C_1) \frac{dh_2}{dt} + h_2 = R_2q
+$$
+
+Observando que \( h_2 = R_2q_2 \), obtenemos
+
+$$
+R_1C_1R_2C_2 \frac{d^2q_2}{dt^2} + (R_1C_1 + R_2C_2 + R_2C_1) \frac{dq_2}{dt} + q_2 = q
+$$
+
+Este es el modelo matemático deseado o ecuación diferencial que relaciona \( q_2 \) y \( q \).
+
 
 # 28 de abril
 
