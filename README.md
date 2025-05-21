@@ -248,7 +248,105 @@ valores de “s”
 se pueden ubicar en un plano cartesiano
 
 
+Hallar los zeros de una función de
+transferencia
 
+
+$$
+G(s) = \frac{Y(s)}{U(s)} = \frac{3s-1}{s^2+3s+2} = \frac{N(s)}{D(s)}
+$$
+
+$$
+N(s) = 0 \quad 3s-1=0
+$$
+
+
+# Ejemplo 1
+
+Dada la función de transferencia:
+
+$$
+G(s) = \frac{s^2 + 4s + 13}{(s + 2)(s + 5)}
+$$
+
+Determinar los ceros.
+
+**Solución:**
+
+Ceros = raíces del numerador:
+
+$$
+s^2 + 4s + 13 = 0
+$$
+
+Aplicamos fórmula general:
+
+$$
+s = \frac{-4 \pm \sqrt{(4)^2 - 4(1)(13)}}{2(1)} = \frac{-4 \pm \sqrt{-36}}{2} = -2 \pm 3i
+$$
+
+
+# Ejemplo 2 
+
+Dada la siguiente función de transferencia de un sistema dinámico de segundo orden:
+
+$$
+G(s) = \frac{s^2 + 6s + 25}{s^2 + 10s + 24}
+$$
+
+En este caso, el numerador es:
+
+$$
+s^2 + 6s + 25 = 0
+$$
+
+Aplicamos la fórmula cuadrática:
+
+$$
+s = \frac{-6 \pm \sqrt{6^2 - 4(1)(25)}}{2(1)} = \frac{-6 \pm \sqrt{36 - 100}}{2} = \frac{-6 \pm \sqrt{-64}}{2}
+$$
+
+$$
+s = \frac{-6 \pm 8i}{2} = -3 \pm 4i
+$$
+
+La función de transferencia tiene dos ceros complejos conjugados en:
+
+$$
+s = -3 + 4i \quad y \quad s = -3 - 4i
+$$
+
+# Polos de una función de transferencia
+
+Si se iguala D(s) a 0 se obtienen los valores de “s” que
+cumplen con la condición
+• Si el denominador se hace 0 toda la función de
+transferencia se vuelve infinito de ahí el nombre para
+estos valores de “s”
+• Estos valores pueden ser reales o complejos por lo tanto
+se pueden ubicar en un plano cartesiano
+
+# Ejemplo 1 
+
+Dada la función de transferencia:
+
+$$
+G(s) = \frac{s + 3}{(s + 1)(s + 4)}
+$$
+
+Los polos son las raíces del denominador:
+
+$$
+(s+1)(s+4) = 0
+$$
+
+$$
+\Rightarrow s+1 = 0 \Rightarrow s = -1
+$$
+
+$$
+\Rightarrow s+4 = 0 \Rightarrow s = -4
+$$
 
 # 2 de mayo
 
