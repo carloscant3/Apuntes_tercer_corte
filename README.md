@@ -68,6 +68,53 @@ $$
 R_1 A_1 \frac{dq_1}{dt} = q_i - q_1
 $$
 
+#Ejemplo 1 
+
+En el sistema de nivel de Iíquido de la Fig. 4-35 supóngase que la
+razón de flujo de salida Q rn3/s a través de la válvula de salida está relacionada con
+la altura H m por 
+
+
+$$
+Q = K \sqrt{H} = 0.01 \sqrt{H}
+$$
+
+
+Supóngase tambih que cuando la razón de flujo de entrada Qi es 0.015 m3/s, la altura
+permanece constante. En t = O la válvula de entrada de flujo se cierra y, por lo tanto
+no hay flujo de entrada para t 1 O. Encuéntrese el tiempo necesario para vaciar el
+tanque a la mitad de su altura original. La capacitancia del tanque es de 2m^2
+
+![image](https://github.com/user-attachments/assets/dbfd8bb1-6846-4cb2-81ba-5ed5dbedbe19)
+
+Cuando la altura es estacionaria, la razón del flujo de entrada es igual a la
+razón del flujo de salida. Así, la altura &, en t = O se obtiene de 
+
+$$
+0.015 = 0.01\sqrt{H_0}
+$$
+
+
+o bien
+
+
+$$
+H_0 = 2.25 \, \text{m}
+$$
+
+La ecuación del sistema para t > O es 
+
+$$
+-C \, dH = Q \, dt
+$$
+
+
+o bien
+
+$$
+\frac{dH}{dt} = -\frac{Q}{C} = \frac{-0.01\sqrt{H}}{2}
+$$
+
 
 
 # 28 de abril
