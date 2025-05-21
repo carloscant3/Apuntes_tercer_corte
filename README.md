@@ -68,7 +68,7 @@ $$
 R_1 A_1 \frac{dq_1}{dt} = q_i - q_1
 $$
 
-#Ejemplo 1 
+# Ejemplo 1 
 
 En el sistema de nivel de Iíquido de la Fig. 4-35 supóngase que la
 razón de flujo de salida Q rn3/s a través de la válvula de salida está relacionada con
@@ -140,7 +140,7 @@ $$
 t_1 = 176 \, \text{s}
 $$
 
-#Ejemplo 2 
+# Ejemplo 2 
 
 En el sistema de nivel de líquido mostrado en la Fig. 4-38, la razbn de flujo en estado estable a través del tanque es Q y las alturas en estado estable
 del tanque 1 y el tanque 2 son fi y 4, respectivamente. En 1 = O la razón de flujo de
@@ -208,6 +208,47 @@ Este es el modelo matemático deseado o ecuación diferencial que relaciona \( q
 # 28 de abril
 
 # Fuuncion de transferencia
+
+En el área de control se usa otro tipo de representación
+matemática denominada función de transferencia.
+
+
+Consiste en la transformada de Laplace de la ecuación
+diferencial
+
+
+
+Clasificación de las funciones de
+transferencia:
+
+
+- Una función de transferencia se puede expresar como:
+
+$$
+G(s) = \frac{N(s)}{D(s)}
+$$
+
+- Donde \( N(s) \) y \( D(s) \) son polinomios en la variable "s".
+- Si denominamos \( n \) al grado del polinomio del numerador.
+- Si denominamos \( m \) al grado del polinomio del denominador.
+- Se tienen 3 casos posibles:
+  - \( n > m \) (impropia)
+  - \( m > n \) (estrictamente propia)
+  - \( n = m \) (bipropia)
+ 
+
+Zeros de una función de transferencia
+
+• Si se iguala N(s) a 0 se obtienen los valores de “s” que
+cumplen con la condición
+• Si el numerador se hace 0 toda la función de
+transferencia se vuelve cero de ahí el nombre para estos
+valores de “s”
+• Estos valores pueden ser reales o complejos por lo tanto
+se pueden ubicar en un plano cartesiano
+
+
+
 
 # 2 de mayo
 
