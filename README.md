@@ -207,7 +207,7 @@ Este es el modelo matemático deseado o ecuación diferencial que relaciona \( q
 
 # 28 de abril
 
-# Fuuncion de transferencia
+# Funcion de transferencia
 
 En el área de control se usa otro tipo de representación
 matemática denominada función de transferencia.
@@ -448,7 +448,7 @@ $$
 \frac{10}{2} = 5
 $$
 
-**Resultado final:** El valor de la salida en estado estable es \( y(\infty) = 5 \).
+
 
 # 2 de mayo
 
