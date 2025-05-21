@@ -455,7 +455,97 @@ $$
 
 # 5 de mayo
 
+# Álgebra de Bloques
+
+Una herramienta que puede ayudar a entender un poco
+la interacción entre varios sistemas son los diagramas de
+bloques 
+
+Primer sistema de control J. Watt
+
+Para explicar su sistema empezó adesarrollar los diagramas de bloques
+
+
 # Maquina de vapor
+
+Una herramienta que ayuda a entender un poco como funcionan los diagramas de bloques
+![image](https://github.com/user-attachments/assets/02d0636f-6e40-4b05-8d11-24dd0ebb13f8)
+
+
+Las flechas: Representan señales dentro del proceso:
+![image](https://github.com/user-attachments/assets/0a2d0e2d-6238-4de9-af45-61a48fa69144)
+
+
+Punto suma: Representa la suma algebraica de dos o más señales
+![image](https://github.com/user-attachments/assets/f0d7b3b4-609d-4f78-ae30-107336eb724d)
+
+
+Ramificacion: ocurre cuando una señal se divide y se envía a varios bloques al mismo tiempo.
+![image](https://github.com/user-attachments/assets/e19e7c10-3065-469e-ba8c-386499591da6)
+
+
+Interpretación del diagrama
+La salida de un bloque funcional corresponde a la señal
+de entrada (Dominio s) multiplicada por por la función de
+transferencia del bloque. 
+
+![image](https://github.com/user-attachments/assets/825996a4-b1c3-46f9-8b15-45361d1dfcbe)
+
+Si se tienen 2 sistemas interconectados
+![image](https://github.com/user-attachments/assets/16f16e3f-bfd5-4300-bb13-46cbca39cb47)
+
+\begin{align*}
+Y_1(s) &= U_1(s)G_1(s) & Y_2(s) &= Y_1(s)G_2(s) \\
+Y_2(s) &= U_2(s)G_2(s) & Y_2(s) &= U_1(s)G_1(s)G_2(s)
+\end{align*}
+$$
+
+![image](https://github.com/user-attachments/assets/e8acf0fc-6785-4340-8540-b3e88e9099ca)
+
+Lazo de realimentación positivo
+
+![image](https://github.com/user-attachments/assets/5db7d737-aad7-44f3-bb38-b92b02262f94)
+
+$$
+E(s) = X(s) + Y_1(s)
+$$
+
+$$
+Y(s) = E(s)G_1(s)
+$$
+
+$$
+Y_1(s) = Y(s)G_2(s)
+$$
+
+$$
+Y(s) = (X(s) + Y_1(s))G_1(s)
+$$
+
+$$
+Y(s) = (X(s) + Y(s)G_2(s))G_1(s)
+$$
+
+$$
+Y(s) = X(s)G_1(s) + Y(s)G_2(s)G_1(s)
+$$
+
+$$
+Y(s) - Y(s)G_2(s)G_1(s) = X(s)G_1(s)
+$$
+
+$$
+Y(s)(1 - G_2(s)G_1(s)) = X(s)G_1(s)
+$$
+
+$$
+\frac{Y(s)}{X(s)} = \frac{G_1(s)}{1 - G_2(s)G_1(s)}
+$$
+
+# Ejemplo 1 
+
+# Ejemplo 2
+
 
 # 9 de mayo
 
