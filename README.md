@@ -46,7 +46,27 @@ Modelo de un tanque:
 
 ![image](https://github.com/user-attachments/assets/47466672-464d-407a-86ff-076afe7149fb)
 
+Tomando \( q_i \) como entrada y \( q_1 \) como salida:
 
+$$
+q_1 = \frac{h_1}{R_1}
+$$
+
+$$
+A_1 \frac{dh_1}{dt} = q_i - q_1
+$$
+
+Relación adicional:
+
+$$
+h_1 = q_1 \cdot R_1
+$$
+
+Sustituyendo en la ecuación diferencial:
+
+$$
+R_1 A_1 \frac{dq_1}{dt} = q_i - q_1
+$$
 
 
 
