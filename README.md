@@ -44,7 +44,9 @@ $$
 
 Modelo de un tanque:
 
+
 ![image](https://github.com/user-attachments/assets/47466672-464d-407a-86ff-076afe7149fb)
+
 
 Tomando \( q_i \) como entrada y \( q_1 \) como salida:
 
@@ -85,7 +87,9 @@ permanece constante. En t = O la válvula de entrada de flujo se cierra y, por l
 no hay flujo de entrada para t 1 O. Encuéntrese el tiempo necesario para vaciar el
 tanque a la mitad de su altura original. La capacitancia del tanque es de 2m^2
 
+
 ![image](https://github.com/user-attachments/assets/dbfd8bb1-6846-4cb2-81ba-5ed5dbedbe19)
+
 
 Cuando la altura es estacionaria, la razón del flujo de entrada es igual a la
 razón del flujo de salida. Así, la altura &, en t = O se obtiene de 
@@ -147,7 +151,9 @@ del tanque 1 y el tanque 2 son fi y 4, respectivamente. En 1 = O la razón de fl
 entrada se cambia de Q a Q + q, donde q es un cambio pequefio en la razón de flujo
 de entrada. Los cambios correspondientes en las alturas (hl y h2) y los cambios en la 
 
+
 ![image](https://github.com/user-attachments/assets/6fc0ab0d-7445-4fb6-bf3f-e273d251d0bf)
+
 
 
 razón de flujo (q, y q2) se suponen pequefios. Las capacitancias del tanque I y el tanque 2 son Cl y C;, respectivamente. La resistencia de la válvula entre los tanques es
@@ -469,18 +475,22 @@ Para explicar su sistema empezó adesarrollar los diagramas de bloques
 # Maquina de vapor
 
 Una herramienta que ayuda a entender un poco como funcionan los diagramas de bloques
+
 ![image](https://github.com/user-attachments/assets/02d0636f-6e40-4b05-8d11-24dd0ebb13f8)
 
 
 Las flechas: Representan señales dentro del proceso:
+
 ![image](https://github.com/user-attachments/assets/0a2d0e2d-6238-4de9-af45-61a48fa69144)
 
 
 Punto suma: Representa la suma algebraica de dos o más señales
+
 ![image](https://github.com/user-attachments/assets/f0d7b3b4-609d-4f78-ae30-107336eb724d)
 
 
 Ramificacion: ocurre cuando una señal se divide y se envía a varios bloques al mismo tiempo.
+
 ![image](https://github.com/user-attachments/assets/e19e7c10-3065-469e-ba8c-386499591da6)
 
 
@@ -489,10 +499,15 @@ La salida de un bloque funcional corresponde a la señal
 de entrada (Dominio s) multiplicada por por la función de
 transferencia del bloque. 
 
+
 ![image](https://github.com/user-attachments/assets/825996a4-b1c3-46f9-8b15-45361d1dfcbe)
 
+
 Si se tienen 2 sistemas interconectados
+
+
 ![image](https://github.com/user-attachments/assets/16f16e3f-bfd5-4300-bb13-46cbca39cb47)
+
 
 \begin{align*}
 Y_1(s) &= U_1(s)G_1(s) & Y_2(s) &= Y_1(s)G_2(s) \\
@@ -502,7 +517,9 @@ $$
 
 ![image](https://github.com/user-attachments/assets/e8acf0fc-6785-4340-8540-b3e88e9099ca)
 
+
 Lazo de realimentación positivo
+
 
 ![image](https://github.com/user-attachments/assets/5db7d737-aad7-44f3-bb38-b92b02262f94)
 
