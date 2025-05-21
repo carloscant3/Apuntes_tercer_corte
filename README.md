@@ -20,6 +20,30 @@ $$
 
 # Sistema de tanques
 
+En sistemas industrials de tanques es deseable mantener
+flujo o nivel constante
+
+
+![image](https://github.com/user-attachments/assets/bab05579-22f2-490e-ae46-6b9bb7bbad47)
+
+
+Flujo de salida del tanque
+
+
+$$
+q_1 = \frac{h_1}{R_1}
+$$
+
+
+Intercambio de energía
+
+
+$$
+A_1 \frac{dh_1}{dt} = q_i - q_1
+$$
+
+
+
 # 28 de abril
 
 # Fuuncion de transferencia
