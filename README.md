@@ -456,7 +456,15 @@ $$
 
 
 
+
+
+
 # 2 de mayo
+
+
+
+
+
 
 
 # 5 de mayo
@@ -561,7 +569,7 @@ $$
 
 # Ejemplo 1 
 
-Del diagrama de bloques mostrado en la Fig. 8-56, obtenga la
+Del diagrama de bloques mostrado en la imagen, obtenga la
 función de transferencia que relaciona
 
 ![image](https://github.com/user-attachments/assets/28cee82a-78ba-4780-8231-826a25e3856e)
