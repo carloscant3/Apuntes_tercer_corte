@@ -704,10 +704,103 @@ tocan)+…
 no se toquen entre sí)-(suma ganancias 3 lazos que no toquen
 la trayectoria 𝑃𝑘 y no se toquen entre sí)+…
 
+# Ejemplo 1
+
+![image](https://github.com/user-attachments/assets/11427175-35b5-4001-b68c-2e9a28e265ac)
+
+**Trayectoria directa:**
+$$
+P_1 = 1 \cdot 1 \cdot G_1 \cdot G_2 \cdot G_3 \cdot 1 = G_1 G_2 G_3
+$$
+
+**Lazos cerrados:**
+$$
+L_1 = G_1 G_2 H_1
+$$
+
+$$
+L_2 = -G_2 G_3 H_2
+$$
+
+$$
+L_3 = -G_1 G_2 G_3
+$$
+
+### Determinante del sistema:
+$$
+\Delta = 1 - (L_1 + L_2 + L_3) \quad \text{(Determinante del sistema)}
+$$
+
+### Cofactores:
+$$
+\Delta_1 = 1 \quad \text{(Cofactor para la trayectoria directa)}
+$$
+
+### Función de transferencia resultante:
+$$
+\frac{C(s)}{R(s)} = \frac{P_1 \Delta_1}{\Delta} = \frac{G_1 G_2 G_3}{1 - G_1 G_2 H_1 + G_2 G_3 H_2 + G_1 G_2 G_3}
+$$
+
+# Ejemplo 2
+
+![image](https://github.com/user-attachments/assets/be8509aa-a513-41f8-af1b-43d93ffb468d)
 
 
+### Trayectorias Directas:
+$$
+P_1 = G_1 G_2 G_3 G_4 G_5
+$$
+
+$$
+P_2 = G_1 G_6 G_4 G_5
+$$
+
+$$
+P_3 = G_1 G_2 G_7
+$$
+
+### Lazos de Retroalimentación:
+$$
+L_1 = -G_4 H_1
+$$
+
+$$
+L_2 = -G_2 G_7 H_2
+$$
+
+$$
+L_3 = -G_6 G_4 G_5 H_2
+$$
+
+$$
+L_4 = -G_2 G_3 G_4 G_5 H_2
+$$
+
+### Determinante del Sistema:
+$$
+\Delta = 1 - (L_1 + L_2 + L_3 + L_4) + L_1 L_2
+$$
 
 
+Cofactores
+
+$$
+\Delta_1 = 1 \\
+\Delta_2 = 1 \\
+\Delta_3 = 1 - L_1
+$$
+
+$$
+L_1 \text{ no toca la trayectoria }
+$$
+
+$$
+\frac{C(s)}{R(s)} = \frac{1}{\Delta} (P_1 \Delta_1 + P_2 \Delta_2 + P_3 \Delta_3)
+$$
+
+$$
+= \frac{G_1 G_2 G_3 G_4 G_5 + G_1 G_6 G_4 G_5 + G_1 G_2 G_7 (1 + G_4 H_1)}{1 + G_4 H_1 + G_3 G_7 H_2 + G_6 G_4 G_5 H_2 + G_3 G_3 G_4 G_5 H_2 + G_4 H_1 G_3 G_7 H_2}
+$$
 
 
 
