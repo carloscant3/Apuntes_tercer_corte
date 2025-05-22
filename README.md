@@ -583,15 +583,17 @@ función de transferencia que relaciona
 
 La señal \( X(s) \) es la suma de las dos señales \( G_1 \Theta_i(s) \) y \( \Theta_j(s) \). Por lo tanto,
 
+
 $$
 X(s) = G_1 \Theta_i(s) + \Theta_j(s)
 $$
 
-
+$$
 La señal \( X(s) \) es la suma de las dos señales \( G_1 \Theta_i(s) \) y \( \Theta_j(s) \). Por lo tanto,
 $$
 
 
+$$
 \Theta_o(s) = G_2 X(s) + \Theta_i(s) = G_2 [G_1 \Theta_i(s) + \Theta_j(s)] + \Theta_i(s)
 $$
 
