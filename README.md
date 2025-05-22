@@ -584,6 +584,25 @@ $$
 \frac{\Theta_o(s)}{\Theta_i(s)} = G_1 G_2 + G_2 + 1
 $$
 
+# Ejemplo 2 
+
+Simplifiquese el diagrama de bloques mostrado
+
+![image](https://github.com/user-attachments/assets/607f14a7-0c17-4b0b-8ab4-70ca963ea6e7)
+
+Primero nos vamos al punto de bifurcación de la trayectoria que incluye a
+H, por fuera de la trayectoria que incluye a H2 como se muestra en la primera imagen.
+Luego elimínense las dos trayectorias y resulta la segunda imaegn. La combinación de
+dos bloques en uno da la ultima imagen
+
+![image](https://github.com/user-attachments/assets/15ad152f-f7a4-4449-b4f8-2a9ad1fec7b3)
+
+
+![image](https://github.com/user-attachments/assets/82777497-b87f-4cea-bb95-2f31aeed1d16)
+
+
+![image](https://github.com/user-attachments/assets/81d80f54-5e33-4d77-8cc8-918bb9c87325)
+
 
 # 9 de mayo
 
