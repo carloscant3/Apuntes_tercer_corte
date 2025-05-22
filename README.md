@@ -588,9 +588,10 @@ X(s) = G_1 \Theta_i(s) + \Theta_j(s)
 $$
 
 
-La señal de salida \( \Theta_o(s) \) es la suma de \( G_2 X(s) \) y \( \Theta_i(s) \). De donde,
-
+La señal \( X(s) \) es la suma de las dos señales \( G_1 \Theta_i(s) \) y \( \Theta_j(s) \). Por lo tanto,
 $$
+
+
 \Theta_o(s) = G_2 X(s) + \Theta_i(s) = G_2 [G_1 \Theta_i(s) + \Theta_j(s)] + \Theta_i(s)
 $$
 
