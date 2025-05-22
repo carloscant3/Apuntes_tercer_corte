@@ -581,7 +581,17 @@ función de transferencia que relaciona
 
 ![image](https://github.com/user-attachments/assets/28cee82a-78ba-4780-8231-826a25e3856e)
 
-**Solution.** La señal \( X(s) \) es la suma de las dos señales \( G_1 \Theta_i(s) \) y \( \Theta_j(s) \). Por lo tanto,
+La señal \( X(s) \) es la suma de las dos señales \( G_1 \Theta_i(s) \) y \( \Theta_j(s) \). Por lo tanto,
+
+\[ X(s) = G_1 \Theta_i(s) + \Theta_j(s) \]
+
+La señal de salida \( \Theta_o(s) \) es la suma de \( G_2 X(s) \) y \( \Theta_i(s) \). De donde,
+
+\[ \Theta_o(s) = G_2 X(s) + \Theta_i(s) = G_2 [G_1 \Theta_i(s) + \Theta_j(s)] + \Theta_i(s) \]
+
+Y, por lo tanto, tenemos
+
+\[ \frac{\Theta_o(s)}{\Theta_i(s)} = G_1 G_2 + G_2 + 1 \]
 
 $$
 X(s) = G_1 \Theta_i(s) + \Theta_j(s)
