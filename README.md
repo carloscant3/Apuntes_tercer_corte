@@ -689,6 +689,23 @@ flujo de señales
 ![image](https://github.com/user-attachments/assets/47e63824-8590-463c-a67c-97c311235baa)
 
 
+Fórmula de Mason
+
+$$
+P = \frac{1}{\Delta} \sum_k P_k \Delta_k
+$$
+
+𝑃𝑘Ganancia de los caminos directos
+• Δ = 1 − (suma ganancias de los lazos) + (suma producto de 2
+lazos que no se tocan) – (suma producto de 3 lazos que no se
+tocan)+…
+• Δ𝑘 = 1 −(suma ganancias lazos que no toquen la trayectoria
+𝑃𝑘)+(suma ganancias 2 lazos que no toquen la trayectoria 𝑃𝑘 y
+no se toquen entre sí)-(suma ganancias 3 lazos que no toquen
+la trayectoria 𝑃𝑘 y no se toquen entre sí)+…
+
+
+
 
 
 
