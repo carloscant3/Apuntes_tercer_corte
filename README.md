@@ -644,6 +644,56 @@ dos bloques en uno da la ultima imagen
 
 # Diagrama de flujo de señal
 
+Este tipo de diagramas permite otra forma de
+representación de los sistemas más complejos
+Se utilizan para obtener de una manera más sencilla la
+función de transferencia total del Sistema
+La formula de Mason permite calcular la función de
+trasferencia de sistemas muy complejos
+
+Elementos de los diagramas de flujo de
+señal
+
+Nodo: Representan las señales de entrada o salida del
+Sistema
+• Se representa por medio de un círculo con una
+etiqueta que indique el nombre de la señal
+
+![image](https://github.com/user-attachments/assets/6332d045-77b5-473f-9077-b36166929aeb)
+
+Elementos de los diagramas de flujo de
+señal
+
+Flecha: Representa la relación entre las variables del
+sistema
+• Se representa por medio de flechas que indicando el
+sentido de la relación
+• La fleche sale de la señal (Nodo) de entrada y llega a
+la señal de salida (Nodo)
+• Se agrega una etiqueta a la flecha para indicar la
+función de transferencia que relaciona la entrada y la
+salida
+
+![image](https://github.com/user-attachments/assets/b16a0dc1-624a-4547-94ae-8f7a08d50207)
+
+
+Interpretación de los diagramas de flujo
+de señales
+
+![image](https://github.com/user-attachments/assets/c1aed0a9-985c-43e2-ab2e-230b92cce677)
+
+
+Comparación diagramas de bloques y
+flujo de señales
+
+![image](https://github.com/user-attachments/assets/47e63824-8590-463c-a67c-97c311235baa)
+
+
+
+
+
+
+
 # 12 de mayo
 
 
