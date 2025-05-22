@@ -517,10 +517,17 @@ Si se tienen 2 sistemas interconectados
 ![image](https://github.com/user-attachments/assets/16f16e3f-bfd5-4300-bb13-46cbca39cb47)
 
 
-\begin{align*}
-Y_1(s) &= U_1(s)G_1(s) & Y_2(s) &= Y_1(s)G_2(s) \\
-Y_2(s) &= U_2(s)G_2(s) & Y_2(s) &= U_1(s)G_1(s)G_2(s)
-\end{align*}
+$$
+Y_1(s) = U_1(s)G_1(s)
+$$
+$$
+Y_2(s) = Y_1(s)G_2(s)
+$$
+$$
+Y_2(s) = U_2(s)G_2(s)
+$$
+$$
+Y_2(s) = U_1(s)G_1(s)G_2(s)
 $$
 
 ![image](https://github.com/user-attachments/assets/e8acf0fc-6785-4340-8540-b3e88e9099ca)
