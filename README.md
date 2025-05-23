@@ -1132,8 +1132,13 @@ $$
 
 Identificamos:
 
+$$
 - \( \omega_n^2 = 36 \Rightarrow \omega_n = 6 \)
-- \( 2\zeta\omega_n = 6 \Rightarrow \zeta = \frac{6}{2 \cdot 6} = 0.5 \)
+$$
+
+$$
+\( 2\zeta\omega_n = 6 \Rightarrow \zeta = \frac{6}{2 \cdot 6} = 0.5 \)
+$$
 
 # Parámetros del sistema
 
