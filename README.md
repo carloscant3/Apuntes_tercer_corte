@@ -1023,7 +1023,7 @@ $$
 
 # Ejemplo No. 1
 
-Modelo sobreamortiguado:
+**Modelo sobreamortiguado:**
 
 $$
 G(s) = \frac{10}{s^2 + 10s + 20}
@@ -1053,7 +1053,7 @@ $$
 
 **Conclusión**: Como \( \zeta > 1 \), el sistema es **sobreamortiguado**, tiene dos raíces reales distintas y no oscila.
 
-Modelo críticamente amortiguado:
+**Modelo críticamente amortiguado:**
 
 $$
 G(s) = \frac{25}{s^2 + 10s + 25}
@@ -1083,7 +1083,7 @@ $$
 
 **Conclusión**: Como \( \zeta = 1 \), el sistema es **críticamente amortiguado**, tiene una raíz real doble y no oscila.
 
-Modelo subamortiguado:
+**Modelo subamortiguado:**
 
 $$
 G(s) = \frac{30}{s^2 + 6s + 30}
@@ -1095,7 +1095,7 @@ $$
 G(s) = \frac{\omega_n^2}{s^2 + 2\zeta\omega_n s + \omega_n^2}
 $$
 
-Identificando coeficientes:
+**Identificando coeficientes:
 
 $$
 \( 2\zeta\omega_n = 6 \)
