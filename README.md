@@ -810,6 +810,20 @@ $$
 
 
 # 16 de mayo
+# SISTEMAS DE PRIMER ORDEN
+
+Las funciones de transferencia de primer orden salen de una ecuación diferencial también de primer orden. Estas funciones se escriben así:
+
+$$
+\frac{Y(s)}{U(s)} = \frac{c}{as + b}
+$$
+
+Donde:
+- \( Y(s) \) es la salida del sistema.
+- \( U(s) \) es la entrada.
+- \( a \), \( b \) y \( c \) son constantes que vienen del sistema físico.
+
+Los mismos parámetros que están en la ecuación diferencial también aparecen en la función de transferencia. Estos parámetros son los que definen cómo se comporta el sistema.
 
 
 # 19 de mayo
