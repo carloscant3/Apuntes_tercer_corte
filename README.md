@@ -807,18 +807,58 @@ $$
 # 12 de mayo
 # FORMULA DE MASON
 
-La Fórmula de Mason se usa para calcular la función de transferencia total de un sistema representado mediante un diagrama de flujo de señales.
+# ¿Qué es la Fórmula de Mason?
 
-![image](https://github.com/user-attachments/assets/96bb0435-3c91-4947-a851-68557a5ccc60)
+La **Fórmula de Mason**, también conocida como **Regla de Mason para gráficos de flujo de señal**, permite calcular de manera **directa** la **función de transferencia** de un sistema representado con un **diagrama de bloques o de flujo**.
 
+Se expresa como:
+
+$$
+T(s) = \frac{C(s)}{R(s)} = \frac{1}{\Delta} \sum_k P_k \Delta_k
+$$
 
 Donde:
 
-- \( P_k \): Ganancia del camino directo \( k \).
-- \( \Delta = 1 - (\text{suma de ganancias de lazos}) + (\text{suma productos de pares de lazos no tocantes}) - (\text{productos de tríos de lazos no tocantes}) + \dots \)
-- \( \Delta_k = 1 - (\text{suma de ganancias de lazos que no tocan } P_k) + (\text{productos de pares de lazos que no tocan } P_k) - \dots \)
+$$
+\( C(s) \): salida del sistema.
+$$
 
+$$
+\( R(s) \): entrada del sistema.
+$$
 
+$$
+\( P_k \): cada camino directo desde la entrada hasta la salida.
+$$
+
+$$
+\( \Delta \): determinante del sistema (considera todos los lazos).  
+$$
+
+$$
+- \( \Delta_k \): determinante considerando solo los lazos que **no tocan** el camino \( P_k \).  
+$$
+
+**¿Por qué es importante?**
+
+- **Evita simplificaciones complejas**: en lugar de aplicar reducciones de bloques, Mason trabaja con el grafo completo.  
+- **Ideal para sistemas con múltiples lazos de realimentación**.  
+- **Aplica a sistemas LTI (lineales e invariantes en el tiempo)**.  
+- **Base de herramientas como MATLAB, Simulink y Scilab**.  
+
+**¿Cuándo usarla?**
+
+- Cuando hay varios caminos de entrada a salida.  
+- Cuando hay muchos lazos y sus combinaciones.  
+- Cuando se busca automatizar el análisis del sistema.
+
+**¿Qué debes dominar para usarla bien?**
+
+1. Identificar caminos directos \( P_k \).  
+2. Detectar lazos individuales y sus ganancias.  
+3. Encontrar lazos que no se tocan.  
+4. Construir \( \Delta \) y \( \Delta_k \).  
+5. Entender álgebra de bloques y sistemas lineales.  
 
 
 # 16 de mayo
