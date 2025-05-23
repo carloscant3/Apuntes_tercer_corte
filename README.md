@@ -1020,3 +1020,141 @@ $$
 # Aplicación: 
 
 ![image](https://github.com/user-attachments/assets/9ccd0ae6-4d73-434c-a34c-9d15744d3882)
+
+# Ejemplo No. 1
+
+Modelo sobreamortiguado:
+
+$$
+G(s) = \frac{10}{s^2 + 10s + 20}
+$$
+
+Forma estándar:
+
+$$
+G(s) = \frac{\omega_n^2}{s^2 + 2\zeta\omega_n s + \omega_n^2}
+$$
+
+Identificando coeficientes:
+
+- \( 2\zeta\omega_n = 10 \)
+- \( \omega_n^2 = 20 \Rightarrow \omega_n = \sqrt{20} \approx 4.472 \)
+
+Entonces:
+
+$$
+\zeta = \frac{10}{2 \cdot 4.472} \approx 1.118
+$$
+
+**Conclusión**: Como \( \zeta > 1 \), el sistema es **sobreamortiguado**, tiene dos raíces reales distintas y no oscila.
+
+Modelo críticamente amortiguado:
+
+$$
+G(s) = \frac{25}{s^2 + 10s + 25}
+$$
+
+Forma estándar:
+
+$$
+G(s) = \frac{\omega_n^2}{s^2 + 2\zeta\omega_n s + \omega_n^2}
+$$
+
+Identificando coeficientes:
+
+- \( 2\zeta\omega_n = 10 \)
+- \( \omega_n^2 = 25 \Rightarrow \omega_n = 5 \)
+
+Entonces:
+
+$$
+\zeta = \frac{10}{2 \cdot 5} = 1
+$$
+
+**Conclusión**: Como \( \zeta = 1 \), el sistema es **críticamente amortiguado**, tiene una raíz real doble y no oscila.
+
+Modelo subamortiguado:
+
+$$
+G(s) = \frac{30}{s^2 + 6s + 30}
+$$
+
+Forma estándar:
+
+$$
+G(s) = \frac{\omega_n^2}{s^2 + 2\zeta\omega_n s + \omega_n^2}
+$$
+
+Identificando coeficientes:
+
+- \( 2\zeta\omega_n = 6 \)
+- \( \omega_n^2 = 30 \Rightarrow \omega_n = \sqrt{30} \approx 5.477 \)
+
+Entonces:
+
+$$
+\zeta = \frac{6}{2 \cdot 5.477} \approx 0.548
+$$
+
+**Conclusión**: Como \( 0 < \zeta < 1 \), el sistema es **subamortiguado**, tiene raíces complejas conjugadas y su respuesta es oscilatoria.
+
+# Ejemplo No. 2
+
+# Problema propuesto
+
+Un sistema mecánico masa-resorte-amortiguador tiene como función de transferencia:
+
+$$
+G(s) = \frac{36}{s^2 + 6s + 36}
+$$
+
+Tomando una entrada tipo escalón unitario, responde lo siguiente:
+
+1. ¿Qué tipo de sistema es según su amortiguamiento?
+2. ¿Qué tipo de respuesta se espera observar?
+3. ¿Cuál es la frecuencia natural y el factor de amortiguamiento?
+
+---
+
+## Solución
+
+La forma general de un sistema de segundo orden es:
+
+$$
+G(s) = \frac{\omega_n^2}{s^2 + 2\zeta\omega_n s + \omega_n^2}
+$$
+
+Comparando con:
+
+$$
+G(s) = \frac{36}{s^2 + 6s + 36}
+$$
+
+Identificamos:
+
+- \( \omega_n^2 = 36 \Rightarrow \omega_n = 6 \)
+- \( 2\zeta\omega_n = 6 \Rightarrow \zeta = \frac{6}{2 \cdot 6} = 0.5 \)
+
+# Parámetros del sistema
+
+- Frecuencia natural: \( \omega_n = 6 \)
+- Razón de amortiguamiento: \( \zeta = 0.5 \)
+
+# Tipo de sistema
+
+Dado que \( 0 < \zeta < 1 \), se trata de un sistema **subamortiguado**.
+
+# Tipo de respuesta esperada
+
+- La respuesta al escalón presentará **oscilaciones amortiguadas**.
+- Estas oscilaciones disminuirán hasta llegar a un estado estable.
+- Existirá un sobreimpulso y un tiempo de establecimiento definidos.
+
+# Interpretación física
+
+Este sistema representa, por ejemplo:
+
+- Una masa conectada a un resorte con un amortiguador.
+- Si se aplica un esfuerzo repentino, el sistema oscila y luego se estabiliza.
+
+
