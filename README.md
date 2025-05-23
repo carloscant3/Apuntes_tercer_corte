@@ -916,3 +916,37 @@ Esto es lo que se obtiene en el dominio de Laplace. Después, para pasar al tiem
 # 19 de mayo
 
 # Sistema de segundo orden
+
+# Ecuaciones diferenciales de segundo orden
+
+En este tema, una ecuación diferencial de segundo orden se ve así:
+
+$$
+\ddot{y}(t) + a_1 \dot{y}(t) + a_0 y(t) = b_0 u(t)
+$$
+
+Esto representa un sistema donde la salida \( y(t) \) depende de su derivada, su segunda derivada, y de la entrada \( u(t) \).
+
+## Función de transferencia
+
+Para obtener la función de transferencia, usamos la Transformada de Laplace (sin condiciones iniciales):
+
+$$
+s^2Y(s) + a_1sY(s) + a_0Y(s) = b_0U(s)
+$$
+
+Factorizando \( Y(s) \):
+
+$$
+Y(s)\left(s^2 + a_1s + a_0\right) = b_0U(s)
+$$
+
+Despejando la relación entre salida y entrada (Función de Transferencia):
+
+$$
+\frac{Y(s)}{U(s)} = \frac{b_0}{s^2 + a_1s + a_0}
+$$
+
+Esta es la forma estándar de un sistema de segundo orden. Sirve para analizar cómo responde un sistema cuando se le da una entrada \( u(t) \).
+
+
