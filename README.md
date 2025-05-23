@@ -836,15 +836,15 @@ $$
 $$
 
 $$
-- \( \Delta_k \): determinante considerando solo los lazos que **no tocan** el camino \( P_k \).  
+\( \Delta_k \): determinante considerando solo los lazos que **no tocan** el camino \( P_k \).  
 $$
 
 **¿Por qué es importante?**
 
-- **Evita simplificaciones complejas**: en lugar de aplicar reducciones de bloques, Mason trabaja con el grafo completo.  
-- **Ideal para sistemas con múltiples lazos de realimentación**.  
-- **Aplica a sistemas LTI (lineales e invariantes en el tiempo)**.  
-- **Base de herramientas como MATLAB, Simulink y Scilab**.  
+- Evita simplificaciones complejas: en lugar de aplicar reducciones de bloques, Mason trabaja con el grafo completo.  
+- Ideal para sistemas con múltiples lazos de realimentación.  
+- Aplica a sistemas LTI (lineales e invariantes en el tiempo).  
+- Base de herramientas como MATLAB, Simulink y Scilab.  
 
 **¿Cuándo usarla?**
 
@@ -859,6 +859,79 @@ $$
 3. Encontrar lazos que no se tocan.  
 4. Construir \( \Delta \) y \( \Delta_k \).  
 5. Entender álgebra de bloques y sistemas lineales.  
+
+# Ejemplo No. 1
+
+![image](https://github.com/user-attachments/assets/a2ab525c-4bb2-4e54-9704-0b4bdfcac6ad)
+
+# Solución del Ejemplo - Fórmula de Mason
+
+**Objetivo:**
+Calcular la función de transferencia \( \frac{Y(s)}{X(s)} \) usando la fórmula de Mason.
+
+**Camino directo**
+
+Solo hay **un camino directo** de entrada a salida:
+
+$$
+P_1 = G_1 \cdot G_2 \cdot G_3 \cdot G_4 \cdot G_5
+$$
+
+# Lazos
+
+Los lazos identificados son:
+
+$$
+\begin{aligned}
+B_1 &= G_2 \cdot H_1 \\
+B_2 &= G_4 \cdot H_2 \\
+B_3 &= G_6 \cdot H_3 \\
+B_4 &= G_2 \cdot G_3 \cdot G_4 \cdot G_5 \cdot H_4 \cdot G_6 \cdot H_5
+\end{aligned}
+$$
+
+**Determinante total \( \Delta \)**
+
+Usamos la fórmula de Mason:
+
+$$
+\Delta = 1 - (B_1 + B_2 + B_3 + B_4) + (B_1 B_2 + B_1 B_3 + B_2 B_3) - (B_1 B_2 B_3)
+$$
+
+**Lazos que tocan el camino**
+
+Todos los lazos tocan el camino directo, por tanto:
+
+$$
+\Delta_1 = 1
+$$
+
+**Función de transferencia final**
+
+Aplicando la fórmula de Mason:
+
+$$
+\frac{Y(s)}{X(s)} = \frac{P_1 \cdot \Delta_1}{\Delta}
+$$
+
+Sustituyendo:
+
+$$
+\frac{Y(s)}{X(s)} = \frac{G_1 \cdot G_2 \cdot G_3 \cdot G_4 \cdot G_5}{1 - (B_1 + B_2 + B_3 + B_4) + (B_1 B_2 + B_1 B_3 + B_2 B_3) - (B_1 B_2 B_3)}
+$$
+
+Donde:
+
+$$
+\begin{aligned}
+B_1 &= G_2 H_1 \\
+B_2 &= G_4 H_2 \\
+B_3 &= G_6 H_3 \\
+B_4 &= G_2 G_3 G_4 G_5 H_4 G_6 H_5
+\end{aligned}
+$$
+
+Esta es la forma simbólica general de la función de transferencia usando la fórmula de Mason.
 
 
 # 16 de mayo
