@@ -923,7 +923,7 @@ $$
 \frac{Y(s)}{U(s)} = \frac{2}{s + 10}
 $$
 
-# Paso 1: Expresar en forma canónica
+**Paso 1: Expresar en forma canónica**
 
 Recordemos que la forma canónica de un sistema de primer orden es:
 
@@ -937,9 +937,7 @@ $$
 \frac{2}{s + 10} = \frac{2}{10 \left( \frac{s}{10} + 1 \right)} = \frac{0.2}{\frac{s}{10} + 1} = \frac{0.2}{0.1 s + 1}
 $$
 
----
-
-# Paso 2: Identificar parámetros
+**Paso 2: Identificar parámetros**
 
 Comparando:
 
