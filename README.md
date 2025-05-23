@@ -959,7 +959,59 @@ Este sistema responde lentamente a una entrada escalón, alcanzando su valor fin
 - Se encuentra amortiguado y no presenta oscilaciones.
 - La salida se estabiliza aproximadamente en \( 4\tau = 0.4 \) s.
 
+# Ejemplo No. 2 – Problema práctico con sistema de primer orden
 
+**Problema:**  
+Un sistema de calefacción automática ajusta la temperatura de una habitación. Cuando se enciende el calentador, la temperatura sube hasta un valor estable, pero no instantáneamente. Se observa que el comportamiento de la temperatura puede modelarse como un sistema de primer orden con la siguiente función de transferencia:
+
+$$
+\frac{T(s)}{Q(s)} = \frac{5}{s + 20}
+$$
+
+Donde:
+- \( T(s) \): Temperatura en Laplace
+- \( Q(s) \): Calor entregado (entrada al sistema)
+- El sistema parte desde una temperatura ambiente y responde a un incremento constante de calor.
+
+Se pide:
+1. Determinar los parámetros \( \tau \) (constante de tiempo) y \( K \) (ganancia estática) del sistema.
+2. Interpretar el comportamiento de la temperatura en función del tiempo.
+
+**Paso 1: Forma canónica**
+
+Recordemos la forma canónica de un sistema de primer orden:
+
+$$
+\frac{Y(s)}{U(s)} = \frac{K}{\tau s + 1}
+$$
+
+Partimos de:
+
+$$
+\frac{5}{s + 20} = \frac{5}{20 \left( \frac{s}{20} + 1 \right)} = \frac{0.25}{0.05 s + 1}
+$$
+
+**Paso 2: Identificación de parámetros**
+
+Comparando con la forma canónica:
+
+$$
+\( K = 0.25 \)
+$$
+
+$$
+\( \tau = 0.05 \) segundos
+$$
+
+**Interpretación**
+
+- La ganancia \( K = 0.25 \) indica que por cada unidad de calor constante que se entrega, la temperatura se estabiliza en 0.25 unidades más.
+- La constante de tiempo \( \tau = 0.05 \) indica que el sistema alcanza el 63.2% de su valor final en 0.05 s, y se estabiliza completamente en aproximadamente \( 4\tau = 0.2 \) s.
+
+**Conclusión**
+
+- El sistema es rápido: responde en décimas de segundo.
+- Representa adecuadamente un modelo térmico simple, como el control de temperatura en un horno pequeño o una incubadora.
 
 # 19 de mayo
 
