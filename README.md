@@ -927,7 +927,7 @@ $$
 
 Esto representa un sistema donde la salida \( y(t) \) depende de su derivada, su segunda derivada, y de la entrada \( u(t) \).
 
-## Función de transferencia
+# Función de transferencia
 
 Para obtener la función de transferencia, usamos la Transformada de Laplace (sin condiciones iniciales):
 
@@ -981,7 +981,7 @@ Donde:
 - \( \omega_n \) es la **frecuencia natural** del sistema (rad/s).
 - \( \zeta \) (zeta) es el **factor de amortiguamiento** del sistema.
 
-## ¿Por qué esta forma es útil?
+# ¿Por qué esta forma es útil?
 
 Esta forma **sí permite identificar directamente** los parámetros que afectan cómo responde el sistema:
 - Si es rápido o lento (\( \omega_n \)).
@@ -990,11 +990,11 @@ Esta forma **sí permite identificar directamente** los parámetros que afectan 
 
 Esto hace que sea más práctica para análisis y diseño en ingeniería de control.
 
-#Respuesta de un Sistema de Segundo Orden a una Entrada Escalón
+# Respuesta de un Sistema de Segundo Orden a una Entrada Escalón
 
 Cuando se aplica una señal escalón a un sistema de segundo orden, su comportamiento depende del factor de amortiguamiento \( \zeta \) y la frecuencia natural \( \omega_n \).
 
-#Función de transferencia en forma canónica:
+# Función de transferencia en forma canónica:
 
 $$
 G(s) = \frac{K \cdot \omega_n^2}{s^2 + 2\zeta \omega_n s + \omega_n^2}
