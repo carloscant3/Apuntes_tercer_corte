@@ -912,6 +912,56 @@ $$
 
 Esto es lo que se obtiene en el dominio de Laplace. Después, para pasar al tiempo real (dominio del tiempo), se aplica la transformada inversa.
 
+# Ejemplo No. 1
+
+**Sistema de primer orden**
+
+**Problema:**  
+Identificar \( \tau \) y \( K \) para el siguiente sistema de primer orden:
+
+$$
+\frac{Y(s)}{U(s)} = \frac{2}{s + 10}
+$$
+
+# Paso 1: Expresar en forma canónica
+
+Recordemos que la forma canónica de un sistema de primer orden es:
+
+$$
+\frac{Y(s)}{U(s)} = \frac{K}{\tau s + 1}
+$$
+
+Reescribimos la función de transferencia dada:
+
+$$
+\frac{2}{s + 10} = \frac{2}{10 \left( \frac{s}{10} + 1 \right)} = \frac{0.2}{\frac{s}{10} + 1} = \frac{0.2}{0.1 s + 1}
+$$
+
+---
+
+# Paso 2: Identificar parámetros
+
+Comparando:
+
+$$
+\( K = 0.2 \)
+$$
+
+$$
+\( \tau = 0.1 \) segundos
+$$
+
+**Interpretación**
+
+Este sistema responde lentamente a una entrada escalón, alcanzando su valor final (0.2) de forma exponencial con una constante de tiempo de \( \tau = 0.1 \) s.
+
+**Conclusión**
+
+- Este es un **sistema de primer orden estable**.
+- Se encuentra amortiguado y no presenta oscilaciones.
+- La salida se estabiliza aproximadamente en \( 4\tau = 0.4 \) s.
+
+
 
 # 19 de mayo
 
