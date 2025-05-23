@@ -825,6 +825,43 @@ Donde:
 
 Los mismos parámetros que están en la ecuación diferencial también aparecen en la función de transferencia. Estos parámetros son los que definen cómo se comporta el sistema.
 
+# EJEMPLO VISTO EN CLASE
+
+![image](https://github.com/user-attachments/assets/876a0544-b2db-4053-88ed-1565b03463bc)
+
+Este es un sistema hidráulico simple donde entra un caudal \( q_i \), se almacena agua en un tanque con área transversal \( A_1 \), y sale por una resistencia \( R_1 \). La altura del agua es \( h_1 \).
+
+La ecuación diferencial que describe este sistema es:
+
+$$
+R_1 A_1 \frac{dh_1}{dt} = R_1 q_i - h_1
+$$
+
+Esta ecuación se puede escribir en la forma estándar:
+
+$$
+a \dot{y}(t) + b y(t) = c u(t)
+$$
+
+Donde:
+- \( a = R_1 A_1 \)
+- \( b = 1 \)
+- \( c = R_1 \)
+
+La función de transferencia se obtiene tomando transformada de Laplace y es:
+
+$$
+\frac{Y(s)}{U(s)} = \frac{c}{as + b}
+$$
+
+En este caso, usando los valores del sistema:
+
+$$
+\frac{H_1(s)}{Q_i(s)} = \frac{R_1}{R_1 A_1 s + 1}
+$$
+
+Esto representa un sistema de primer orden, donde la entrada es el caudal \( Q_i(s) \) y la salida es la altura del líquido \( H_1(s) \).
+
 
 # 19 de mayo
 
