@@ -864,38 +864,51 @@ Esto representa un sistema de primer orden, donde la entrada es el caudal \( Q_i
 
 # Forma canónica de los sistemas de primer orden
 
-\[
+$$
 \frac{Y(s)}{U(s)} = \frac{c}{as + b} = \frac{\frac{c}{b}}{\frac{a}{b}s + 1}
-\]
+$$
 
 La forma canónica considera:
 
-- \(\tau = \frac{a}{b}\): Constante de tiempo  
-- \(K = \frac{c}{b}\): Ganancia Estática
+$$
+(\tau = \frac{a}{b}\): 
+$$
+
+Constante de tiempo  
+
+$$
+(K = \frac{c}{b}\): 
+$$
+
+Ganancia Estática
 
 Por lo tanto:
 
-\[
+$$
 \frac{Y(s)}{U(s)} = \frac{K}{\tau s + 1}
-\]
+$$
 
 # Respuesta de un sistema de primer orden ante una entrada escalón
 
 Cuando a un sistema de primer orden se le aplica una entrada escalón (una señal que sube de 0 a 1 de forma repentina), se puede hallar la salida multiplicando la función de transferencia \( G(s) \) por la entrada \( U(s) \).
 
-Sabemos que para una entrada escalón, \( U(s) = \frac{A}{s} \)
+Sabemos que para una entrada escalón la ecuación es:
+
+$$
+( U(s) = \frac{A}{s} \)
+$$
 
 Y si la función de transferencia del sistema es:
 
-\[
+$$
 G(s) = \frac{K}{\tau s + 1}
-\]
+$$
 
 Entonces la salida \( Y(s) \) es:
 
-\[
+$$
 Y(s) = U(s) \cdot G(s) = \frac{A}{s} \cdot \frac{K}{\tau s + 1} = \frac{AK}{s(\tau s + 1)}
-\]
+$$
 
 Esto es lo que se obtiene en el dominio de Laplace. Después, para pasar al tiempo real (dominio del tiempo), se aplica la transformada inversa.
 
