@@ -805,6 +805,18 @@ $$
 
 
 # 12 de mayo
+# FORMULA DE MASON
+
+La Fórmula de Mason se usa para calcular la función de transferencia total de un sistema representado mediante un diagrama de flujo de señales.
+
+![image](https://github.com/user-attachments/assets/96bb0435-3c91-4947-a851-68557a5ccc60)
+
+
+Donde:
+
+- \( P_k \): Ganancia del camino directo \( k \).
+- \( \Delta = 1 - (\text{suma de ganancias de lazos}) + (\text{suma productos de pares de lazos no tocantes}) - (\text{productos de tríos de lazos no tocantes}) + \dots \)
+- \( \Delta_k = 1 - (\text{suma de ganancias de lazos que no tocan } P_k) + (\text{productos de pares de lazos que no tocan } P_k) - \dots \)
 
 
 
