@@ -949,4 +949,74 @@ $$
 
 Esta es la forma estándar de un sistema de segundo orden. Sirve para analizar cómo responde un sistema cuando se le da una entrada \( u(t) \).
 
+# Forma canónica de los sistemas de segundo orden
 
+La función de transferencia general de un sistema de segundo orden es:
+
+$$
+G(s) = \frac{Y(s)}{U(s)} = \frac{b_0}{s^2 + a_1s + a_0}
+$$
+
+Donde:
+- \( Y(s) \) es la salida en el dominio de Laplace,
+- \( U(s) \) es la entrada,
+- \( a_1 \) y \( a_0 \) son constantes que afectan el comportamiento del sistema.
+
+- Esta forma **no permite identificar fácilmente** los parámetros temporales del sistema, como el tiempo de subida, amortiguamiento, o frecuencia natural.
+- Por eso, en control se prefiere usar una **forma canónica** que los muestre claramente.
+
+En la siguiente sección se explica cómo transformar esta ecuación a una forma canónica que sea más útil para análisis y diseño de controladores.
+
+# Parámetros de los sistemas de segundo orden
+
+Cuando usamos la forma canónica, la función de transferencia se escribe así:
+
+$$
+G(s) = \frac{Y(s)}{U(s)} = \frac{K \cdot \omega_n^2}{s^2 + 2\zeta \omega_n s + \omega_n^2}
+$$
+
+Donde:
+
+- \( K \) es la **ganancia estática** del sistema.
+- \( \omega_n \) es la **frecuencia natural** del sistema (rad/s).
+- \( \zeta \) (zeta) es el **factor de amortiguamiento** del sistema.
+
+## ¿Por qué esta forma es útil?
+
+Esta forma **sí permite identificar directamente** los parámetros que afectan cómo responde el sistema:
+- Si es rápido o lento (\( \omega_n \)).
+- Si vibra mucho o poco (\( \zeta \)).
+- Cuánto amplifica la salida en estado estable (\( K \)).
+
+Esto hace que sea más práctica para análisis y diseño en ingeniería de control.
+
+#Respuesta de un Sistema de Segundo Orden a una Entrada Escalón
+
+Cuando se aplica una señal escalón a un sistema de segundo orden, su comportamiento depende del factor de amortiguamiento \( \zeta \) y la frecuencia natural \( \omega_n \).
+
+#Función de transferencia en forma canónica:
+
+$$
+G(s) = \frac{K \cdot \omega_n^2}{s^2 + 2\zeta \omega_n s + \omega_n^2}
+$$
+
+# Aplicando una entrada escalón de amplitud \( A \):
+
+$$
+Y(s) = \frac{K \cdot \omega_n^2 \cdot A}{(s + \zeta \omega_n + \omega_n \sqrt{\zeta^2 - 1})(s + \zeta \omega_n - \omega_n \sqrt{\zeta^2 - 1})s}
+$$
+
+# Caso Subamortiguado (\( \zeta < 1 \)):
+
+Cuando el sistema es subamortiguado, presenta oscilaciones que se atenúan con el tiempo. Su respuesta temporal es:
+
+$$
+\mathcal{L}^{-1}\{Y(s)\} = K \cdot A \cdot \left(1 - e^{-\zeta \omega_n t} \left[\cos(\omega_n \sqrt{1 - \zeta^2} \cdot t) + \frac{\zeta}{\sqrt{1 - \zeta^2}} \sin(\omega_n \sqrt{1 - \zeta^2} \cdot t)\right] \right)
+$$
+
+- Esta respuesta representa un comportamiento **oscilatorio amortiguado** típico en muchos sistemas físicos.
+- Es útil para analizar tiempo de subida, sobrepaso y tiempo de establecimiento.
+
+# Aplicación: 
+
+![image](https://github.com/user-attachments/assets/9ccd0ae6-4d73-434c-a34c-9d15744d3882)
