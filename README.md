@@ -1037,8 +1037,13 @@ $$
 
 Identificando coeficientes:
 
-- \( 2\zeta\omega_n = 10 \)
-- \( \omega_n^2 = 20 \Rightarrow \omega_n = \sqrt{20} \approx 4.472 \)
+$$
+\( 2\zeta\omega_n = 10 \)
+$$
+
+$$
+\( \omega_n^2 = 20 \Rightarrow \omega_n = \sqrt{20} \approx 4.472 \)
+$$
 
 Entonces:
 
@@ -1062,8 +1067,13 @@ $$
 
 Identificando coeficientes:
 
-- \( 2\zeta\omega_n = 10 \)
-- \( \omega_n^2 = 25 \Rightarrow \omega_n = 5 \)
+$$
+\( 2\zeta\omega_n = 10 \)
+$$
+
+$$
+\( \omega_n^2 = 25 \Rightarrow \omega_n = 5 \)
+$$
 
 Entonces:
 
@@ -1087,8 +1097,13 @@ $$
 
 Identificando coeficientes:
 
-- \( 2\zeta\omega_n = 6 \)
-- \( \omega_n^2 = 30 \Rightarrow \omega_n = \sqrt{30} \approx 5.477 \)
+$$
+\( 2\zeta\omega_n = 6 \)
+$$
+
+$$
+\( \omega_n^2 = 30 \Rightarrow \omega_n = \sqrt{30} \approx 5.477 \)
+$$
 
 Entonces:
 
@@ -1114,7 +1129,6 @@ Tomando una entrada tipo escalón unitario, responde lo siguiente:
 2. ¿Qué tipo de respuesta se espera observar?
 3. ¿Cuál es la frecuencia natural y el factor de amortiguamiento?
 
----
 
 ## Solución
 
@@ -1133,12 +1147,13 @@ $$
 Identificamos:
 
 $$
-- \( \omega_n^2 = 36 \Rightarrow \omega_n = 6 \)
+\( \omega_n^2 = 36 \Rightarrow \omega_n = 6 \)
 $$
 
 $$
 \( 2\zeta\omega_n = 6 \Rightarrow \zeta = \frac{6}{2 \cdot 6} = 0.5 \)
 $$
+
 
 # Parámetros del sistema
 
