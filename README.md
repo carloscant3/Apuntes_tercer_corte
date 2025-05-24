@@ -681,6 +681,130 @@ $$
 
 **Conclusión**: solo la entrada escalón permite un valor final finito en este sistema. Las otras dos (rampa y parábola) generan salidas crecientes indefinidamente si el sistema es tipo 0.
 
+# Ejemplo No. 2
+
+# Análisis de sistema con ecuación diferencial
+
+Considere la siguiente **ecuación diferencial** del sistema:
+
+$$
+\ddot{y} + 4\dot{y} + 6y = 2\dot{u} + 3u
+$$
+
+Obtenga:
+
+- Función de transferencia
+- Zeros y polos
+- Valor final frente a un **escalón unitario**
+- Valor final frente a una **rampa de pendiente 3**
+
+# 1. Función de transferencia
+
+Aplicamos transformada de Laplace con condiciones iniciales nulas:
+
+$$
+\mathcal{L}\{\ddot{y}\} = s^2 Y(s) 
+$$
+
+$$
+\mathcal{L}\{\dot{y}\} = s Y(s) 
+$$
+
+$$
+\mathcal{L}\{\dot{u}\} = s U(s) 
+$$
+
+Entonces:
+
+$$
+s^2 Y(s) + 4s Y(s) + 6Y(s) = 2s U(s) + 3U(s)
+$$
+
+Factorizamos:
+
+$$
+Y(s) \left( s^2 + 4s + 6 \right) = U(s) \left( 2s + 3 \right)
+$$
+
+Función de transferencia:
+
+$$
+G(s) = \frac{Y(s)}{U(s)} = \frac{2s + 3}{s^2 + 4s + 6}
+$$
+
+### 🔹 2. Zeros y Polos
+
+- **Zero**: raíz del numerador:
+
+$$ 
+2s + 3 = 0 \Rightarrow s = -\frac{3}{2} 
+$$
+
+- **Polos**: raíces del denominador:
+
+$$
+s^2 + 4s + 6 = 0 \Rightarrow s = -2 \pm j
+$$
+
+Zeros: \( s = -1.5 \)  
+Polos: \( s = -2 \pm j \)
+
+# 3. Valor final frente a escalón unitario
+
+Entrada: 
+
+$$
+u(t) = 1 \cdot u(t) \Rightarrow U(s) = \frac{1}{s} 
+$$
+
+Aplicamos teorema del valor final:
+
+$$
+\lim_{t \to \infty} y(t) = \lim_{s \to 0} sY(s) = \lim_{s \to 0} s \cdot G(s) \cdot U(s)
+= \lim_{s \to 0} s \cdot \frac{2s + 3}{s^2 + 4s + 6} \cdot \frac{1}{s}
+= \lim_{s \to 0} \frac{2s + 3}{s^2 + 4s + 6}
+= \frac{3}{6} = 0.5
+$$
+
+**Valor final: 0.5**
+
+# 4. Valor final frente a rampa de pendiente 3
+
+Entrada: 
+
+$$
+u(t) = 3t \Rightarrow U(s) = \frac{3}{s^2}
+$$
+
+$$
+\lim_{t \to \infty} y(t) = \lim_{s \to 0} s \cdot G(s) \cdot U(s)
+= \lim_{s \to 0} s \cdot \frac{2s + 3}{s^2 + 4s + 6} \cdot \frac{3}{s^2}
+= \lim_{s \to 0} \frac{3(2s + 3)}{s(s^2 + 4s + 6)}
+= \infty
+$$
+
+**Valor final: ∞ (el sistema no sigue una rampa sin error en estado estacionario)**
+
+**Resultados**:
+
+$$
+G(s): \( \frac{2s + 3}{s^2 + 4s + 6} \)
+$$
+
+- Zero:
+
+$$
+\( s = -1.5 \)
+$$
+
+- Polos:
+
+$$
+\( s = -2 \pm j \)
+$$
+
+- Valor final para escalón: **0.5**
+- Valor final para rampa de pendiente 3: **Infinito**
 
 # 5 de mayo
 
