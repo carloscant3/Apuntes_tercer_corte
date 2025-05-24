@@ -474,23 +474,12 @@ Por eso usamos funciones conocidas para probar el sistema.
 **Ejemplo:** 
 Sistema con un agitador, donde:
 
-$$
-`T_i(t)` = temperatura de entrada
-$$
+- T_i(t) = temperatura de entrada
+- T(t) = temperatura en el tanque
+- f = flujo de entrada (m³/s)
+- n = velocidad del agitador
 
-$$
-`T(t)` = temperatura en el tanque
-$$
-
-$$
-`f` = flujo de entrada (m³/s)
-$$
-
-$$
-`n` = velocidad del agitador
-$$
-
-La idea es ver cómo responde `T(t)` frente a cambios en `T_i(t)` usando funciones estándar.
+La idea es ver cómo responde T(t) frente a cambios en T_i(t) usando funciones estándar.
 
 **Entradas comunes usadas para probar un sistema:**
 - Escalón
@@ -498,7 +487,7 @@ La idea es ver cómo responde `T(t)` frente a cambios en `T_i(t)` usando funcion
 - Rampa
 - Señal senoidal
 
-# ⚡ Entrada Escalón
+# Entrada Escalón
 
 Es una entrada que representa un **cambio repentino de nivel**. Muy usada para analizar cómo responde un sistema ante un cambio brusco.
 
@@ -518,10 +507,174 @@ $$
 \mathcal{L}\{u(t)\} = \frac{A}{s}
 $$
 
-A menudo se usa con $$$t_0 = 0$$$, es decir, el cambio ocurre justo al iniciar la prueba.
+A menudo se usa con t_0 = 0, es decir, el cambio ocurre justo al iniciar la prueba.
 
 ![image](https://github.com/user-attachments/assets/4ca3c2fc-ac06-4f52-b5e2-1eb8446e80c3)
 
+# Entrada Rampa
+
+Es una entrada que **varía linealmente con el tiempo**, comenzando en un punto t_0.
+
+- Se define como:
+
+$$
+x(t) =
+\begin{cases}
+0 & \text{para } t < t_0 \\
+At & \text{para } t \geq t_0
+\end{cases}
+$$
+
+- Transformada de Laplace:
+
+$$
+\mathcal{L}\{x(t)\} = \frac{A}{s^2}
+$$
+
+**Interpretación**: representa un **aumento progresivo constante**, como el llenado de un tanque a caudal constante, o un motor acelerando linealmente.
+
+![image](https://github.com/user-attachments/assets/288273ab-11b8-4ec4-b81b-644cb7ce4559)
+
+# Entrada Parábola
+
+Es una entrada que considera una **variación no lineal en el tiempo**, permitiendo evaluar diferentes condiciones de inicio y final.
+
+- Se define como:
+
+$$
+r(t) =
+\begin{cases}
+0 & \text{para } t < t_0 \\
+At^2 & \text{para } t \geq t_0
+\end{cases}
+$$
+
+- Transformada de Laplace:
+
+$$
+\mathcal{L}\{r(t)\} = \frac{A}{s^3}
+$$
+
+**Interpretación**: este tipo de entrada representa una **aceleración creciente**. Es útil para simular movimientos con aceleración variable o sistemas con condiciones de cambio progresivo no lineal.
+
+![image](https://github.com/user-attachments/assets/11e23f4e-f061-488c-aa4d-9b19fee8e0d8)
+
+# Ejemplo No. 1
+
+# Cálculo del valor final para las entradas de prueba
+
+Aplicamos el **Teorema del Valor Final**:
+
+$$
+\lim_{t \to \infty} y(t) = \lim_{s \to 0} sY(s)
+$$
+
+donde 
+
+$$
+\( Y(s) = G(s)X(s) \) 
+$$
+
+con 
+
+$$
+\( G(s) \) 
+$$
+
+la función de transferencia del sistema y 
+
+
+$$
+\( X(s) \) la transformada de la entrada.
+$$
+
+
+**Entrada Escalón**
+
+- Entrada:
+
+$$
+x(t) = A u(t) 
+$$
+
+Transformada: 
+$$ 
+X(s) = \frac{A}{s} 
+$$
+
+Suponiendo 
+
+$$ 
+G(s) = \frac{1}{s+2} 
+$$
+
+**Cálculo**:
+
+$$
+\lim_{s \to 0} s \cdot \frac{1}{s+2} \cdot \frac{A}{s}
+= \lim_{s \to 0} \frac{A}{s+2} = \frac{A}{2}
+$$
+
+**Valor final: \( \frac{A}{2} \)**
+
+# Entrada Rampa
+
+- Entrada:
+
+$$ 
+x(t) = At \cdot u(t) 
+$$
+
+- Transformada:
+
+$$
+X(s) = \frac{A}{s^2} 
+$$
+
+- Suponiendo
+
+$$ 
+G(s) = \frac{1}{s+2} 
+$$
+
+**Cálculo**:
+
+$$
+\lim_{s \to 0} s \cdot \frac{1}{s+2} \cdot \frac{A}{s^2}
+= \lim_{s \to 0} \frac{A}{s(s+2)} = \infty
+$$
+
+**Valor final: ∞ (el sistema no alcanza estado estacionario)**
+
+# Entrada Parábola
+
+- Entrada:
+
+$$ 
+x(t) = At^2 \cdot u(t) 
+$$
+
+- Transformada:
+$$
+X(s) = \frac{A}{s^3}
+$$
+
+- Suponiendo
+
+$$
+G(s) = \frac{1}{s+2} 
+$$
+
+**Cálculo**:
+
+$$
+\lim_{s \to 0} s \cdot \frac{1}{s+2} \cdot \frac{A}{s^3}
+= \lim_{s \to 0} \frac{A}{s^2(s+2)} = \infty
+$$
+
+**Valor final: ∞ (diverge aún más rápido que la rampa)**
+
+**Conclusión**: solo la entrada escalón permite un valor final finito en este sistema. Las otras dos (rampa y parábola) generan salidas crecientes indefinidamente si el sistema es tipo 0.
 
 
 # 5 de mayo
