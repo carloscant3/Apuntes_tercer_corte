@@ -598,6 +598,7 @@ x(t) = A u(t)
 $$
 
 Transformada: 
+
 $$ 
 X(s) = \frac{A}{s} 
 $$
@@ -615,7 +616,11 @@ $$
 = \lim_{s \to 0} \frac{A}{s+2} = \frac{A}{2}
 $$
 
-**Valor final: \( \frac{A}{2} \)**
+**Valor final: 
+
+$$
+\( \frac{A}{2} \)**
+$$
 
 # Entrada Rampa
 
