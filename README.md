@@ -461,9 +461,66 @@ $$
 
 # 2 de mayo
 
+# Entrada de prueba de un sistema
 
+Cuando se quiere analizar un sistema dinámico, no se usan señales reales directamente porque:
 
+- Hay ruido
+- Son difíciles de controlar
+- Hay muchas variaciones
 
+Por eso usamos funciones conocidas para probar el sistema.
+
+**Ejemplo:** 
+Sistema con un agitador, donde:
+
+$$
+`T_i(t)` = temperatura de entrada
+$$
+
+$$
+`T(t)` = temperatura en el tanque
+$$
+
+$$
+`f` = flujo de entrada (m³/s)
+$$
+
+$$
+`n` = velocidad del agitador
+$$
+
+La idea es ver cómo responde `T(t)` frente a cambios en `T_i(t)` usando funciones estándar.
+
+**Entradas comunes usadas para probar un sistema:**
+- Escalón
+- Impulso
+- Rampa
+- Señal senoidal
+
+# ⚡ Entrada Escalón
+
+Es una entrada que representa un **cambio repentino de nivel**. Muy usada para analizar cómo responde un sistema ante un cambio brusco.
+
+- Se define como:
+
+$$
+u(t) =
+\begin{cases}
+0 & \text{para } t < t_0 \\
+A & \text{para } t \geq t_0
+\end{cases}
+$$
+
+- Transformada de Laplace:
+
+$$
+\mathcal{L}\{u(t)\} = \frac{A}{s}
+$$
+
+A menudo se usa con $$$t_0 = 0$$$, es decir, el cambio ocurre justo al iniciar la prueba.
+
+![image](https://github.com/user-attachments/assets/4ca3c2fc-ac06-4f52-b5e2-1eb8446e80c3)
 
 
 
