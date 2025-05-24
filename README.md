@@ -616,10 +616,10 @@ $$
 = \lim_{s \to 0} \frac{A}{s+2} = \frac{A}{2}
 $$
 
-**Valor final: 
+**Valor final:**
 
 $$
-\( \frac{A}{2} \)**
+\( \frac{A}{2} \)
 $$
 
 # Entrada Rampa
@@ -732,7 +732,7 @@ $$
 G(s) = \frac{Y(s)}{U(s)} = \frac{2s + 3}{s^2 + 4s + 6}
 $$
 
-### 🔹 2. Zeros y Polos
+# 2. Zeros y Polos
 
 - **Zero**: raíz del numerador:
 
